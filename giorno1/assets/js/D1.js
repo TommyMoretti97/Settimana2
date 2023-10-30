@@ -21,10 +21,10 @@ REGOLE
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-
 /* SCRIVI QUI LA TUA RISPOSTA */
-let myName = 'Tommaso';
+let myName = "Tommaso";
 console.log(myName);
+document.getElementById('myName').innerHTML += myName;
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
@@ -32,7 +32,8 @@ console.log(myName);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let a = 12;
 let b = 20;
-console.log( a + b );
+console.log(a + b);
+document.getElementById ('somma').innerHTML += a+b;
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
@@ -45,14 +46,17 @@ let x = 12;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-myName = 'Moretti';
+myName = "Moretti";
 console.log(myName);
+// const persona = myName;
+//persona = 'Tommaso Moretti'; Questa istruzione genererà un errore
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log( 4 - x);
+console.log(4 - x);
+document.getElementById ('sottrazione').innerHTML += 4-x;
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
@@ -60,9 +64,14 @@ console.log( 4 - x);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let name1 = 'john';
-let name2 = 'John' ;
- 
-console.log ( name1 === name2 );
+let name1 = "john";
+let name2 = "John";
+let verifica = name1 === name2;
 
-console.log ( name1 === name2.toLowerCase() );
+console.log( 'I due nomi sono uguali?', verifica );
+const scrivi = (verifica) ? 'Si': 'No';
+document.getElementById ('verifica').innerHTML += scrivi;
+let verifica2 = name1.toLowerCase() === name2.toLowerCase();
+
+console.log(  'I due nomi sono uguali?', name1.toLowerCase() === name2.toLowerCase());
+document.getElementById ('verifica2').innerHTML += verifica2;
