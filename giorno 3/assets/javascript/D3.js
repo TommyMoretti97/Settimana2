@@ -105,7 +105,7 @@ const starWarsCharacters = [
 
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
-*/
+*/ 
 let characters = [];
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
@@ -135,14 +135,14 @@ let eyeColor = {
   yellow: [],
   brown: [],
   red: [],
-  "blue-gray": []
+  'blue-gray': []
 };
 
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-for( let i=0; i<starWarsCharacters; i++ ){
+for( let i=0; i<starWarsCharacters.length; i++ ){
   
   switch (starWarsCharacters[i].eye_color){
     case 'blue' :
@@ -202,7 +202,7 @@ if (crewMass < 500){
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
-for( let i =0; i<starWarsCharacters; i++){
+for( let i =0; i<starWarsCharacters.length; i++){
   if(starWarsCharacters[i].gender === "n/a"){
     starWarsCharacters[i].gender = "robot";
   }
