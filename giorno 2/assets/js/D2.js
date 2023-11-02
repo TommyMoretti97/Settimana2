@@ -147,17 +147,17 @@ else{
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   */
-  let val = 7
-  if (val < 10) {
-      console.log( val + ' è minore di 10');
-    } else if (val < 5) {
-      console.log( val + ' è minore di 5');
-    } else {
-      console.log( val + ' è maggiore o ugale a 10');
-    }
-
+ 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7
+if (val < 5) {
+    console.log( val + ' è minore di 5');
+  } else if (val < 10) {
+    console.log( val + ' è minore di 10');
+  } else {
+    console.log( val + ' è maggiore o ugale a 10');
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
