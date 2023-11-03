@@ -8,7 +8,7 @@ function area(l1, l2) {
   calcoloArea = l1 * l2;
   return calcoloArea;
 }
-console.log(area( 5,5));
+console.log(area(5, 5));
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
@@ -85,8 +85,9 @@ function epify(stringa) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-check3and7(42);
-function check3and7(x) {
+
+function check3and7(numero) {
+  numero = Math.abs(numero);
   if (x % 3 == 0) {
     if (x % 7 == 0) {
       console.log(x + " è un multiplo di 3 e 7");
@@ -112,6 +113,7 @@ function reverseString(parole) {
   let array = parole.split("");
   let scambiatore = array.reverse();
   let valorescambiato = scambiatore.join("");
+  // per scriverla meglio let valorescambiato = parole.spli('').reverse().join('');
   console.log(valorescambiato);
 }
 
@@ -121,28 +123,24 @@ function reverseString(parole) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
-
-
+const string = "devo mettere le prime lettere maiuscole";
 function upperFirst(string) {
-  const words = string.split(' ');
-  const capitalizedWords = words.map(word => {
+  const words = string.split(" ");
+  const capitalizedWords = words.map((word) => {
     if (word.length > 0) {
       return word.charAt(0).toUpperCase() + word.slice(1);
     } else {
       return word;
     }
   });
-  return capitalizedWords.join('');
+  return capitalizedWords.join("");
 }
 
-const string = "devo mettere le prime lettere maiuscole";
+
 const result = upperFirst(string);
 console.log(result);
-
-
-
+/*oppure
+function upperFirst(string) {
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
