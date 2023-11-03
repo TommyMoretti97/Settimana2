@@ -225,3 +225,9 @@ console.log('Array characters dopo eliminazione', characters.length);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+const indice = Math.floor( Math.random()* starWarsCharacters.length);
+const elemento = starWarsCharacters[indice];
+console.log( ' L oggetto estratto è ', elemento.name);
+console.log ( 'queste sono le sue caratteristiche');
+console.log('Altezza', elemento.height);
+console.log('Peso' , elemento.mass);
