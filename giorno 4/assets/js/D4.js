@@ -159,12 +159,12 @@ function cutString(stringa) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 giveMeRandom();
-let n = 5;
+let n = 3;
 function giveMeRandom(n) {
   arrayNumeri = [];
   for (let i = 0; i < n; i++) {
-    let arrayNumero = Math.floor(Math.random() * 11); // Genera numeri casuali da 0 a 10
-    arrayNumeri.push(arrayNumero);
+    arrayNumeri.push( Math.floor(Math.random() * 11)); // Genera numeri casuali da 0 a 10
+    
   }
   return arrayNumeri;
 }
